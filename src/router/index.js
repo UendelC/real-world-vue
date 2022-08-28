@@ -10,6 +10,7 @@ import NetworkError from "@/views/NetworkError.vue";
 import NProgress from "nprogress";
 import EventService from "@/services/EventService";
 import GStore from "@/store";
+import CreateItemVue from "@/views/event/CreateItem.vue";
 
 const routes = [
   {
@@ -79,6 +80,11 @@ const routes = [
       { path: "register", redirect: () => ({ name: "EventRegister" }) },
       { path: "edit", redirect: () => ({ name: "EventEdit" }) },
     ],
+  },
+  {
+    path: "/event/create",
+    name: "EventCreate",
+    component: CreateItemVue,
   },
   {
     path: "/:catchAll(.*)",
