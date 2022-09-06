@@ -1,0 +1,87 @@
+{
+  "events": [
+    {
+      "id": 123,
+      "category": "animal welfare",
+      "title": "Cat Adoption Day",
+      "description": "Find your new feline friend at this event.",
+      "location": "Meow Town",
+      "date": "January 28, 2022",
+      "time": "12:00",
+      "organizer": "Kat Laydee"
+    },
+    {
+      "id": 456,
+      "category": "food",
+      "title": "Community Gardening",
+      "description": "Join us as we tend to the community edible plants.",
+      "location": "Flora City",
+      "date": "March 14, 2022",
+      "time": "10:00",
+      "organizer": "Fern Pollin"
+    },
+    {
+      "id": 789,
+      "category": "sustainability",
+      "title": "Beach Cleanup",
+      "description": "Help pick up trash along the shore.",
+      "location": "Playa Del Carmen",
+      "date": "July 22, 2022",
+      "time": "11:00",
+      "organizer": "Carey Wales"
+    },
+    {
+      "id": "94948be1-040d-433d-b3fe-83e363001bef",
+      "category": "animal welfare",
+      "title": "Aut aut in voluptati",
+      "description": "Rerum qui aliquam am",
+      "location": "Quod eum non asperio",
+      "date": "Dolores illum liber",
+      "time": "Rerum do dolore dist",
+      "organizer": "Uendel Couto"
+    },
+    {
+      "id": "b767924e-0827-4728-abdb-83a39278a2a6",
+      "category": "",
+      "title": "",
+      "description": "",
+      "location": "",
+      "date": "",
+      "time": "",
+      "organizer": "Uendel Couto"
+    },
+    {
+      "id": 1313
+    },
+    {
+      "id": "ef67ba4e-69ec-4549-97ff-ceca72da7b3d",
+      "category": "education",
+      "title": "Aprender Inglẽs",
+      "description": "um novo evento",
+      "location": "brasil",
+      "date": "hoje",
+      "time": "agora",
+      "organizer": "Uendel Couto"
+    },
+    {
+      "id": "26de9603-3fc8-48a3-ba27-9ebe8d57bc78",
+      "category": "community",
+      "title": "Ab porro molestias s",
+      "description": "Maxime nisi optio o",
+      "location": "Et laudantium qui i",
+      "date": "Recusandae Culpa cu",
+      "time": "Eum et doloremque es",
+      "organizer": "Uendel Couto"
+    },
+    {
+      "id": "bc3ccead-ee0c-4df9-ba55-d9ff10e0ae9b",
+      "category": "education",
+      "title": "Suscipit in libero q",
+      "description": "Est at impedit ips",
+      "location": "In sit fugiat offi",
+      "date": "Qui animi est labor",
+      "time": "Dignissimos qui debi",
+      "organizer": "Uendel Couto"
+    }
+  ]
+}

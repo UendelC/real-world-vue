@@ -63,7 +63,6 @@ export default {
   },
   methods: {
     onSubmit() {
-      console.log(this.event);
       this.$store
         .dispatch("createEvent", this.event)
         .then(() => {

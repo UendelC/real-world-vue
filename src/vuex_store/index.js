@@ -19,7 +19,7 @@ export default createStore({
     },
   },
   actions: {
-    createEvent({ commit }, event) {
+    async createEvent({ commit }, event) {
       return EventService.postEvent(event)
         .then((response) => {
           commit("ADD_EVENT", response.data);

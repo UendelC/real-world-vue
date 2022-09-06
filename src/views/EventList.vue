@@ -38,7 +38,6 @@
 <script>
 // @ is an alias to /src
 import EventCard from "@/components/EventCard.vue";
-import EventService from "@/services/EventService";
 
 export default {
   name: "EventList",
@@ -46,44 +45,18 @@ export default {
   components: {
     EventCard,
   },
-  data() {
-    return {
-      events: null,
-      totalEvents: 0,
-    };
-  },
-  beforeRouteEnter(routeTo, routeFrom, next) {
-    EventService.getEvents(2, parseInt(routeTo.query.page) || 1)
-      .then((response) => {
-        next((comp) => {
-          comp.events = response.data;
-          comp.totalEvents = response.headers["x-total-count"];
-        });
-      })
-      .catch(() => {
-        next({
-          name: "NetworkError",
-        });
-      });
-  },
-  beforeRouteUpdate(routeTo) {
-    return EventService.getEvents(2, parseInt(routeTo.query.page) || 1)
-      .then((response) => {
-        this.events = response.data;
-        this.totalEvents = response.headers["x-total-count"];
-      })
-      .catch(() => {
-        return {
-          name: "NetworkError",
-        };
-      });
+  created() {
+    this.$store.dispatch("fetchEvents");
   },
   computed: {
     hasNextPage() {
       return this.page < this.totalPages;
     },
+    events() {
+      return this.$store.state.events;
+    },
     totalPages() {
-      return Math.ceil(this.totalEvents / 2);
+      return Math.ceil(this.events.length / 2);
     },
   },
 };
